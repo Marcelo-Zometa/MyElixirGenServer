@@ -1,8 +1,12 @@
 defmodule MygenserverTest do
   use ExUnit.Case
-  doctest Mygenserver
+  doctest ServerProcess
 
   test "greets the world" do
-    assert Mygenserver.hello() == :world
+    assert ServerProcess.hello() == :world
+  end
+
+  test "trying this assert thing" do
+    assert 2 != 3
   end
 end
